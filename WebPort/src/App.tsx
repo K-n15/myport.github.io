@@ -1,7 +1,8 @@
-import SidePanel  from "./components/SidePanel";
+import TopNav from "./components/TopNav/TopNav";
+import SidePanel from "./components/SidePanel/SidePanel";
 
 function App(){
-  return <SidePanel />
+  return <><TopNav title="Experience and Achievement" /><SidePanel /></>
 }
 
 export default App;

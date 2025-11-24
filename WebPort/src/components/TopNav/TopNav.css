@@ -1,0 +1,30 @@
+#border {
+    border: 1px solid black;
+    color: #BFA181;
+    /* A3B4C8 */
+    padding: 0;
+    border-bottom: 3px solid #948979;
+}
+
+.box {
+    background-color:#222831;
+    height: 10vh;
+    color: #BFA181;
+}
+
+#drop {
+    background-color: #393E46;
+    border: 3px solid #948979;
+    color: #DFD0B8;
+    min-width: 15vw;
+    text-align: center;
+}
+
+#title {
+    padding: 1vh 2vw 0 0;
+    font-family: monospace;
+}
+
+#logo {
+    padding-left: 1vw;
+}
