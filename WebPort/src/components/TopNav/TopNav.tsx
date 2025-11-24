@@ -20,8 +20,26 @@ function searchBar(){
     );
 }
 
+function download(){
+    //Use to download the resume
+    return (
+        <></>
+    );
+}
+
 function TopNav(props : any) {
-    const isPort = props.type == "port";
+
+    let content = (<></>);
+
+    switch (props.types){
+        case 'Portfolio':
+            content = searchBar();
+            break;
+        case 'Resume':
+            content = download();
+            break;
+    }
+
     return (
         <>
             <nav className="navbar bg-body-tertiary " id='border'>
@@ -29,7 +47,7 @@ function TopNav(props : any) {
                     <a className="navbar-brand" id='logo' href="#">
                     <img src="#" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"></img>
                     </a>
-                    {searchBar()}
+                    {content}
                     <h3 id='title'>{ props.title }</h3>
                 </div>
             </nav>

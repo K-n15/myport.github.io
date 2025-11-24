@@ -31,9 +31,10 @@
 }
 
 .CollapseButton:hover {
-    color: #0A1828;
+    color: #222831;
     background-color: #948979;
-    border: 1px solid #0A1828;
+    border: 3px solid #948979;
+    font-weight: bold;
 }
 
 #Panel {
