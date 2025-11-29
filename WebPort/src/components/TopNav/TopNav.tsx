@@ -6,21 +6,29 @@ import myLogo from '../Logo.png';
 interface props {
     title : string,
     type : string,
-    isActive : boolean
+    isActive : boolean,
+    filter : string,
+    setfilter : React.Dispatch<React.SetStateAction<string>>
 }
 
-function searchBar(){
+interface subprops {
+    filter : string,
+    setfilter : React.Dispatch<React.SetStateAction<string>>
+}
+
+function searchBar({filter, setfilter}:subprops){
+
     return (
         <>
         <div className="btn-group">
             <button type="button" id='drop' className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Category Selection
+                {filter}
             </button>
             <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Language</a></li>
-                <li><a className="dropdown-item" href="#">Project</a></li>
-                <li><a className="dropdown-item" href="#">Experimentation</a></li>
-                <li><a className="dropdown-item" href="#">close</a></li>
+                <li><a className="dropdown-item" href="#" onClick={()=>setfilter('Language')}>Language</a></li>
+                <li><a className="dropdown-item" href="#" onClick={()=>setfilter('Project')}>Project</a></li>
+                <li><a className="dropdown-item" href="#" onClick={()=>setfilter('Experimentation')}>Experimentation</a></li>
+                <li><a className="dropdown-item" href="#" onClick={()=>setfilter('Category Selection')}>Cancel</a></li>
             </ul>
         </div>
         </>
@@ -34,13 +42,13 @@ function download(){
     );
 }
 
-function TopNav({title, type, isActive}:props) {
+function TopNav({title, type, isActive, filter, setfilter}:props) {
 
     let content = (<></>);
 
     switch (type){
         case 'Portfolio':
-            content = searchBar();
+            content = searchBar({filter, setfilter});
             break;
         case 'Resume':
             content = download();

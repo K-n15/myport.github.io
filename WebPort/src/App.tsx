@@ -8,13 +8,14 @@ import './App.css';
 
 function App(){
   const [sideActive, toggleSidePanel] = useState(false);
+    const [filters , setfilters] = useState('Category Selection');
 
   const word = "Hardworking and enthusiastic college student working towards a B.S. in Marketing. Seeking to use my superior knowledge of social media marketing and my advanced communication skills to effectively serve your company in an internship position. Dedicated and committed to becoming a dependable and valuable team member.";
 
   return (
       <>
         <div className="background">
-          <TopNav title="Experience and Achievement" type='Portfolio' isActive={sideActive}/>
+          <TopNav title="Experience and Achievement" type='Portfolio' isActive={sideActive} filter={filters} setfilter={setfilters}/>
           <div className="detail">
             <SidePanel isActive={sideActive} toggle={()=>toggleSidePanel(!sideActive)}/>
             <div className="port">
