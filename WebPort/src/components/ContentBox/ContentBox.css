@@ -11,7 +11,13 @@
     height: 55vh;
     background-color: #222831;
     margin: 3em 3em;
+    transition: margin 2s;
     flex-shrink: 0;
+}
+
+.Spacing {
+    margin: 3em 5em;
+    transition: margin 2s;
 }
 
 .preview {
