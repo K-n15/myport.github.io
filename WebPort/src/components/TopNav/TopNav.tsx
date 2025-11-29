@@ -3,6 +3,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '/src/components/TopNav/TopNav.css'
 import myLogo from '../Logo.png';
 
+interface props {
+    title : string,
+    type : string,
+    isActive : boolean
+}
+
 function searchBar(){
     return (
         <>
@@ -28,11 +34,11 @@ function download(){
     );
 }
 
-function TopNav(props : any) {
+function TopNav({title, type, isActive}:props) {
 
     let content = (<></>);
 
-    switch (props.types){
+    switch (type){
         case 'Portfolio':
             content = searchBar();
             break;
@@ -45,11 +51,11 @@ function TopNav(props : any) {
         <>
             <nav className="navbar bg-body-tertiary " id='border'>
                 <div className="container-fluid box">
-                    <a className="navbar-brand" id='logo' href="#">
+                    <a className={isActive ? "navbar-brand normal" : 'navbar-brand Shift'} id='logo' href="#">
                     <img src={myLogo} alt="Logo" className='Logo'></img>
                     </a>
                     {content}
-                    <h3 id='title'>{ props.title }</h3>
+                    <h3 id='title'>{ title }</h3>
                 </div>
             </nav>
         </>

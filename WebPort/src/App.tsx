@@ -14,7 +14,7 @@ function App(){
   return (
       <>
         <div className="background">
-          <TopNav title="Experience and Achievement" types='Portfolio'/>
+          <TopNav title="Experience and Achievement" type='Portfolio' isActive={sideActive}/>
           <div className="detail">
             <SidePanel isActive={sideActive} toggle={()=>toggleSidePanel(!sideActive)}/>
             <div className="port">
