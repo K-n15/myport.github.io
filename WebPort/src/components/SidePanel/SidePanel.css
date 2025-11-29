@@ -1,16 +1,10 @@
 .PanelFrame {
-    height:100vh;
+    min-height:100vh;
     width:13vw;
     border-right: 1px solid #BFA181;
     z-index: 2;
     position: relative;
     background-color:#222831;
-}
-
-.PanelContainer {
-    display: flex;
-    height:100vh;
-    background-color: #393E46;
 }
 
 .CollapseButton {
@@ -43,10 +37,10 @@
     border-right: 3px solid #948979;
     border-top: transparent;
     transition: width 2s;
-    z-index: 2;
 }
 
 #Panel.collapsed {
     width: 10vw;
     transition: width 2s;
+    will-change: width;
 }

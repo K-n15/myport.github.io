@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '/src/components/TopNav/TopNav.css'
+import myLogo from '../Logo.png';
 
 function searchBar(){
     return (
@@ -10,10 +11,10 @@ function searchBar(){
                 Category Selection
             </button>
             <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-                <li><a className="dropdown-item" href="#">Separated link</a></li>
+                <li><a className="dropdown-item" href="#">Language</a></li>
+                <li><a className="dropdown-item" href="#">Project</a></li>
+                <li><a className="dropdown-item" href="#">Experimentation</a></li>
+                <li><a className="dropdown-item" href="#">close</a></li>
             </ul>
         </div>
         </>
@@ -45,7 +46,7 @@ function TopNav(props : any) {
             <nav className="navbar bg-body-tertiary " id='border'>
                 <div className="container-fluid box">
                     <a className="navbar-brand" id='logo' href="#">
-                    <img src="#" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"></img>
+                    <img src={myLogo} alt="Logo" className='Logo'></img>
                     </a>
                     {content}
                     <h3 id='title'>{ props.title }</h3>

@@ -1,0 +1,42 @@
+.Edges {
+    border: 2px solid #948979;
+    border-spacing: 0;
+    border-radius:1em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    min-width: 20vw;
+    height: 55vh;
+    background-color: #222831;
+    margin: 3em 3em;
+    flex-shrink: 0;
+}
+
+.preview {
+    width: 20w;
+    height: 23vh;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 2px solid #948979;
+    flex-shrink: 0;
+}
+
+.header {
+    height: 5vh;
+    max-width: 20vw;
+    text-align: center;
+    color: #DFD0B8;
+    flex-shrink: 0;
+}
+
+.description {
+    height: 20vh;
+    max-width: 20vw;
+    font-size: 0.8em;
+    margin: 1vh 0.7vw;
+    text-align: center;
+    color: #DFD0B8;
+    flex-shrink: 0;
+}

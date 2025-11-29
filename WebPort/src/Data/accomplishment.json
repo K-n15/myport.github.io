@@ -1,0 +1,23 @@
+{
+    "Website" : 
+    {
+        "content" : "My port website",
+        "img" : "img link",
+        "tag" : ["Website","tsx","React"],
+        "description" : "My personal website that have my achievement, transcription, CV, and Resume"
+    },
+    "Project" : 
+    {
+        "content" : "My team project",
+        "img" : "img link",
+        "tag" : ["Webapp","tsx","React","FastAPI","Python"],
+        "description" : "My personal website that have my achievement, transcription, CV, and Resume"
+    },
+    "Experimentation" :
+    {
+        "content" : "My team project",
+        "img" : "img link",
+        "tag" : ["Webapp","tsx","React","FastAPI","Python"],
+        "description" : "My personal website that have my achievement, transcription, CV, and Resume"
+    }
+}

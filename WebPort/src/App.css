@@ -1,0 +1,17 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    background-color: #393E46;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    height:100%;
+}
+
+.port {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
